@@ -1,5 +1,5 @@
 {
-  "name": "dye",
+  "name": "@fle/dye",
   "version": "0.0.1",
   "description": "Stdout colorful log in terminal.",
   "main": "index.js",

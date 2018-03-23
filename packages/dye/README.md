@@ -1,5 +1,7 @@
 # dye
 
+[![version](https://img.shields.io/npm/v/@fle/dye.svg)](https://www.npmjs.org/package/@fle/dye)
+
 Stdout colorful log in terminal.
 
 *Tips: It's a pure package without install others.*
