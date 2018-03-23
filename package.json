@@ -1,6 +1,6 @@
 {
 	"name": "fle",
-  "description": "fle scope packages",
+  "description": "fle scope packages.",
 	"devDependencies": {
 		"lerna": "^2.9.0"
 	}
