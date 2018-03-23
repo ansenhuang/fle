@@ -1,7 +1,7 @@
 {
-  "name": "logful",
+  "name": "dye",
   "version": "0.0.1",
-  "description": "Stdio colorful log in terminal.",
+  "description": "Stdout colorful log in terminal.",
   "main": "index.js",
   "scripts": {
     "test": "nodemon test/index.js"
