@@ -1,3 +1,3 @@
 # FLE
 
-fle scope packages.
+fle scope packages for node.
