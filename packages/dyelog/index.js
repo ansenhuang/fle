@@ -44,23 +44,22 @@ Object.keys(alias).forEach(key => {
 
 const cache = ['', ''];
 const descriptors = {};
-const dye = (str) => {
-  let result = cache[0] + str + cache[1];
+const dyelog = (str) => {
+  console.log(cache[0] + str + cache[1]);
   cache[0] = cache[1] = '';
-  return result;
 }
 
 Object.keys(styles).forEach(key => {
-  dye[key] = null;
+  dyelog[key] = null;
   descriptors[key] = {
     get () {
       cache[0] = styles[key][0] + cache[0];
       cache[1] = cache[1] + styles[key][1];
-      return dye;
+      return dyelog;
     }
   }
 });
 
-Object.defineProperties(dye, descriptors);
+Object.defineProperties(dyelog, descriptors);
 
-module.exports = dye;
+module.exports = dyelog;

@@ -1,6 +1,6 @@
-# dye
+# dyelog
 
-[![version](https://img.shields.io/npm/v/@fle/dye.svg)](https://www.npmjs.org/package/@fle/dye)
+[![version](https://img.shields.io/npm/v/@fle/dyelog.svg)](https://www.npmjs.org/package/@fle/dyelog)
 
 Stdout colorful log in terminal.
 
@@ -9,26 +9,26 @@ Stdout colorful log in terminal.
 ## Installation
 
 ```console
-npm install @fle/dye
+npm install @fle/dyelog
 ```
 
 ## Usage
 
 ```js
-const dye = require('@fle/dye');
+const dyelog = require('@fle/dyelog');
 
 // color
-console.log(dye.green('green'));
-console.log(dye.help('help'));
+dyelog.green('green');
+dyelog.help('help');
 
 // style
-console.log(dye.bold('bold'));
+dyelog.bold('bold');
 
 // background
-console.log(dye.bgRed('background red'));
+dyelog.bgRed('background red');
 
 // mixed
-console.log(dye.red.bgWhite.bold('red bgGreen bold'));
+dyelog.red.bgWhite.bold('red bgGreen bold');
 ```
 
 ## API
