@@ -1,6 +1,9 @@
 {
 	"name": "fle",
-  "description": "fle scope packages for node.",
+	"description": "fle scope packages for node.",
+	"scripts": {
+		"pub": "lerna publish --conventional-commits --message \"chore: Publish\""
+	},
 	"devDependencies": {
 		"lerna": "^2.9.0"
 	}
