@@ -1,6 +1,6 @@
 {
   "name": "@fle/color",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Stdout colorful log in terminal.",
   "main": "index.js",
   "scripts": {
