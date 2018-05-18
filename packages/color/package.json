@@ -1,6 +1,6 @@
 {
-  "name": "@fle/dyelog",
-  "version": "0.0.2",
+  "name": "@fle/color",
+  "version": "0.0.0",
   "description": "Stdout colorful log in terminal.",
   "main": "index.js",
   "scripts": {
