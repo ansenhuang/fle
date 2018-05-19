@@ -1,16 +1,20 @@
 {
   "name": "@fle/color",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stdout colorful log in terminal.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "nodemon test/index.js"
+    "dev": "NODE_ENV=development nodemon lib/test.js",
+    "prod": "NODE_ENV=production node lib/test.js"
   },
   "keywords": [
     "color",
     "console",
     "terminal"
   ],
-  "author": "ansenhuang",
-  "license": "ISC"
+  "author": "ansenhuang <ancheng1992@126.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.9.4"
+  }
 }
