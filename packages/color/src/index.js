@@ -24,7 +24,7 @@ const styles = {
   bgMagenta: [ '\u001b[45m', '\u001b[49m' ],
   bgCyan: [ '\u001b[46m', '\u001b[49m' ],
   bgWhite: [ '\u001b[47m', '\u001b[49m' ]
-};
+}
 
 const alias = {
   input: 'gray',
@@ -36,31 +36,31 @@ const alias = {
   warn: 'yellow',
   debug: 'blue',
   error: 'red'
-};
+}
 
 Object.keys(alias).forEach(key => {
-  styles[key] = styles[alias[key]];
-});
+  styles[key] = styles[alias[key]]
+})
 
-const cache = ['', ''];
-const descriptors = {};
+const cache = ['', '']
+const descriptors = {}
 const color = (str) => {
-  let result = cache[0] + str + cache[1];
-  cache[0] = cache[1] = '';
-  return result;
+  let result = cache[0] + str + cache[1]
+  cache[0] = cache[1] = ''
+  return result
 }
 
 Object.keys(styles).forEach(key => {
-  color[key] = null;
+  color[key] = null
   descriptors[key] = {
     get () {
-      cache[0] = styles[key][0] + cache[0];
-      cache[1] = cache[1] + styles[key][1];
-      return color;
+      cache[0] = styles[key][0] + cache[0]
+      cache[1] = cache[1] + styles[key][1]
+      return color
     }
   }
-});
+})
 
-Object.defineProperties(color, descriptors);
+Object.defineProperties(color, descriptors)
 
-module.exports = color;
+export default color
